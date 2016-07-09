@@ -55,15 +55,15 @@ $this->title = 'Panel de Control';
     <div class="container">
         <h1 class="roboto white-text">Documentos</h1>
         <div class="row">
-            <div class="col s12 m4 l4 center hvr-grow-rotate">
+            <div class="col s12 m4 center hvr-grow-rotate">
                 <i class="material-icons md-96 cyan-text">receipt</i>
                 <h3 class="roboto-thin white-text">Facturas</h3>
             </div>
-            <div class="col s12 m4 l4 center hvr-grow-rotate">
+            <div class="col s12 m4 center hvr-grow-rotate">
                 <i class="material-icons md-96 cyan-text">subject</i>
                 <h3 class="roboto-thin white-text">Pedidos</h3>
             </div>
-            <div class="col s12 m4 l4 center hvr-grow-rotate">
+            <div class="col s12 m4 center hvr-grow-rotate">
                 <i class="material-icons md-96 cyan-text">toc</i>
                 <h3 class="roboto-thin white-text">Presupuestos</h3>
             </div>
