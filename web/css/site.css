@@ -125,3 +125,24 @@ a.desc:after {
 .material-icons.md-48 { font-size: 48px; }
 .material-icons.md-96 { font-size: 96px; }
 .material-icons.md-128 { font-size: 128px; }
+
+/** Video */
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.login {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0px 0px 0px 0px;
+}
