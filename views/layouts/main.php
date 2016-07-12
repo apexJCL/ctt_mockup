@@ -33,7 +33,7 @@ AppAsset::register($this);
     <?= $content ?>
 </main>
 <!-- Footer -->
-<?php if(!Yii::$app->user->isGuest) echo $this->render('_footer'); ?>
+<?= $this->render('_footer') ?>
 
 <?php $this->endBody() ?>
 </body>
