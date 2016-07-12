@@ -25,3 +25,12 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
+
+# Node
+node_modules
+
+# Roboto Fonts copied by Grunt
+web/fonts
+
+# Sass precompiler cache
+web/css/.sass-cache

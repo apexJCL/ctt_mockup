@@ -79,23 +79,23 @@ a.desc:after {
 
 @font-face {
     font-family: 'Roboto Light';
-    src: url('/assets/835accab/fonts/roboto/Roboto-Light.woff2');
+    src: url('../fonts/Roboto-Light.woff2');
 }
 @font-face {
     font-family: 'Roboto Medium';
-    src: url('/assets/835accab/fonts/roboto/Roboto-Medium.woff2');
+    src: url('../fonts/Roboto-Medium.woff2');
 }
 @font-face {
     font-family: 'Roboto Regular';
-    src: url('/assets/835accab/fonts/roboto/Roboto-Regular.woff2');
+    src: url('../fonts/Roboto-Regular.woff2');
 }
 @font-face {
     font-family: 'Roboto Thin';
-    src: url('/assets/835accab/fonts/roboto/Roboto-Thin.woff2');
+    src: url('../fonts/Roboto-Thin.woff2');
 }
 @font-face {
     font-family: 'Roboto Bold';
-    src: url('/assets/835accab/fonts/roboto/Roboto-Bold.woff2');
+    src: url('../fonts/Roboto-Bold.woff2');
 }
 
 .roboto-light {

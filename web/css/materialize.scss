@@ -1,0 +1,6 @@
+@import "../../vendor/bower/materialize/sass/components/color";
+$primary-color: color("grey", "darken-4") !default;
+$secondary-color: color('cyan', 'base') !default;
+$navbar-height: 50px !default;
+$roboto-font-path: '../fonts/';
+@import "../../vendor/bower/materialize/sass/materialize";

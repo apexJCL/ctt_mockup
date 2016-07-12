@@ -34,7 +34,7 @@ $this->title = 'Panel de Control';
 </div>
 <div class="section" style="background-color: dimgray">
     <div class="container">
-        <h1 class="roboto white-text">Clientes</h1>
+        <h1 class="roboto-regular white-text">Clientes</h1>
         <div class="row">
             <div class="col s12 m6 center hvr-underline-from-left">
                 <i class="material-icons md-96 cyan-text">perm_identity</i>
@@ -53,7 +53,7 @@ $this->title = 'Panel de Control';
 </div>
 <div class="section" style="background-color: black">
     <div class="container">
-        <h1 class="roboto white-text">Documentos</h1>
+        <h1 class="roboto-regular white-text">Documentos</h1>
         <div class="row">
             <div class="col s12 m4 l4 center hvr-grow-rotate">
                 <i class="material-icons md-96 cyan-text">receipt</i>
