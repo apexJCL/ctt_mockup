@@ -28,17 +28,15 @@ AppAsset::register($this);
 
 <!-- Header -->
     <?php
-    if (Yii::$app->user->isGuest)
+    if (!Yii::$app->user->isGuest)
         echo $this->render('_header');
-    else
-        echo $this->render('_header_user');
     ?>
 <!-- Main Content -->
 <main>
     <?= $content ?>
 </main>
 <!-- Footer -->
-<?= $this->render('_footer') ?>
+<?php if(!Yii::$app->user->isGuest) echo $this->render('_footer'); ?>
 
 <?php $this->endBody() ?>
 </body>
