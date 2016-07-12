@@ -12,9 +12,9 @@ $this->title = 'Inicia Sesión';
 
 <div class="login">
     <div class="center">
-        <img src="/img/logo.jpg" alt="" class="responsive-img">
+        <img src="/img/logo.png" alt="" class="responsive-img">
     </div>
-    <h1 class="roboto-thin center container"><?= Html::encode($this->title) ?></h1>
+    <h1 class="roboto-thin center container white-text"><?= Html::encode($this->title) ?></h1>
     <div class="container">
         <?php $form = ActiveForm::begin([
             'id' => 'login-form',

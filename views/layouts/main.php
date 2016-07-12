@@ -27,10 +27,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <!-- Header -->
-    <?php
-    if (!Yii::$app->user->isGuest)
-        echo $this->render('_header');
-    ?>
+<?= $this->render('_header')?>
 <!-- Main Content -->
 <main>
     <?= $content ?>
