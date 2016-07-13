@@ -1,14 +1,13 @@
-<?php use yii\helpers\Url; ?>
 <header>
     <nav>
         <div class="nav-wrapper container">
             <a href="#" class="brand-logo">CTT EXP & RENTALS</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="<?= Url::to(['logout']) ?>" data-method="post">Iniciar Sesión</a></li>
+                <?= $this->render('_links') ?>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <li><a href="<?= Url::to(['logout']) ?>" data-method="post">Iniciar Sesión</a></li>
+                <?= $this->render('_links') ?>
             </ul>
         </div>
     </nav>
