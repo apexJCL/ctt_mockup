@@ -2,11 +2,17 @@
 
 ### Requisitos
 
+- Git
 - Servidor Web
 - PHP v5.4 (mínimo)
 - [Node.js](https://nodejs.org/)
 
 ## Configurando dependencias
+
+### Git
+
+Primero instale git para poder proceder con el proyecto, lo puede descargar [aqui](https://git-scm.com/downloads)
+Ahora bien, también puede usar la versión gráfica ofrecida por GitHub, llamada (GitHub Desktop)[https://desktop.github.com/]
 
 ### Node.js
 
