@@ -1,4 +1,6 @@
 <?php
+use yii\helpers\Url;
+
 /* @var $this yii\web\View */
 $this->title = 'Panel de Control';
 ?>
@@ -57,7 +59,7 @@ $this->title = 'Panel de Control';
             <div class="overlay-wrapper">
                 <img src="/img/showcase/lenses.jpg" alt="" class="responsive-img">
                 <div class="overlay-content">
-                    <a href="#lentes">
+                    <a href="<?= Url::to(['showcase/index']) ?>">
                         <div class="overlay-text_area">
                             <h4 class="roboto-thin">Lentes</h4>
                         </div>

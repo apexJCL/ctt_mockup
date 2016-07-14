@@ -1,7 +1,8 @@
+<?php use yii\helpers\Url; ?>
 <header>
     <nav>
         <div class="nav-wrapper container">
-            <a href="#" class="brand-logo">CTT EXP & RENTALS</a>
+            <a href="<?= Url::to(['/home']) ?>" class="brand-logo">CTT EXP & RENTALS</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <?= $this->render('_links') ?>
