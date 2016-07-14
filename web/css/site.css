@@ -79,23 +79,23 @@ a.desc:after {
 
 @font-face {
     font-family: 'Roboto Light';
-    src: url('../fonts/Roboto-Light.woff2');
+    src: url('../fonts/Roboto-Light.ttf');
 }
 @font-face {
     font-family: 'Roboto Medium';
-    src: url('../fonts/Roboto-Medium.woff2');
+    src: url('../fonts/Roboto-Medium.ttf');
 }
 @font-face {
     font-family: 'Roboto Regular';
-    src: url('../fonts/Roboto-Regular.woff2');
+    src: url('../fonts/Roboto-Regular.ttf');
 }
 @font-face {
     font-family: 'Roboto Thin';
-    src: url('../fonts/Roboto-Thin.woff2');
+    src: url('../fonts/Roboto-Thin.ttf');
 }
 @font-face {
     font-family: 'Roboto Bold';
-    src: url('../fonts/Roboto-Bold.woff2');
+    src: url('../fonts/Roboto-Bold.ttf');
 }
 
 .roboto-light {

@@ -27,7 +27,7 @@ phpunit.phar
 /phpunit.xml
 
 # Node
-node_modules
+/node_modules
 
 # Roboto Fonts copied by Grunt
 web/fonts

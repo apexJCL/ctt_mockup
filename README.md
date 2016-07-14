@@ -1,102 +1,56 @@
-Yii 2 Basic Project Template
-============================
+# Instalación
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
+### Requisitos
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+- Servidor Web
+- PHP v5.4 (mínimo)
+- [Node.js](https://nodejs.org/)
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-basic/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-basic/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
+## Configurando dependencias
 
-DIRECTORY STRUCTURE
--------------------
+### Node.js
 
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+Instale (Node.js)[https://nodejs.org/] para su plataforma.
+Con **npm** instale **grunt** y **grunt-contrib-copy**
 
-
-
-REQUIREMENTS
-------------
-
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
-
-
-INSTALLATION
-------------
-
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
-
-Set cookie validation key in `config/web.php` file to some random secret string:
-
-```php
-'request' => [
-    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-    'cookieValidationKey' => '<secret random string goes here>',
-],
+```
+npm install -g grunt
+npm install grunt-contrib-copy
 ```
 
-You can then access the application through the following URL:
+Estas dependencias son para manetener las fuentes en su lugar (por ahora).
+ 
+## Instalando Proyecto
 
-~~~
-http://localhost/basic/web/
-~~~
+### Obteniendo el proyecto
 
-
-### Install via Composer
-
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
-
-You can then install this project template using the following command:
-
-~~~
-php composer.phar global require "fxp/composer-asset-plugin:~1.1.1"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
-~~~
-
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
-
-~~~
-http://localhost/basic/web/
-~~~
-
-
-CONFIGURATION
--------------
-
-### Database
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
+Clone el repositorio en su raíz de documentos 
+```
+git clone https://github.com/apexJCL/ctt_mockup.git
 ```
 
-**NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.
+### Configurando el servidor
+
+**Esta configuración es para Apache, si usted tiene otro servidor, favor de seguir pasos similares para su servidor**
+
+Primero asegúrese de que esté habilidato **mod_rewrite** y se permita el uso de archivos **.htaccess**
+Agregue esto a su configuración de **vhosts**:
+```
+<VirtualHost ctt.com>
+    DocumentRoot "C:\xampp\htdocs\ctt_mockup\web"
+    ServerName localhost
+    ServerAlias ctt.com
+    Options +FollowSymlinks
+</VirtualHost>
+```
+
+
+### Configurando el proyecto
+
+En la raíz del proyecto, ejecutar los siguientes comandos:
+```
+composer update
+grunt copy
+```
+
+El proyecto debería estar funcionando por ahora
