@@ -4,7 +4,7 @@ $this->title = 'Panel de Control';
 ?>
 
 <!-- Welcome -->
-<div class="video-header--container">
+<div class="video-header--container scrollspy" id="home">
     <div class="login">
         <div class="row">
             <div class="col s12 l4 offset-l1">
@@ -25,23 +25,24 @@ $this->title = 'Panel de Control';
     </video>
 </div>
 <!-- Inventarios -->
-<div class="section grey lighten-4">
+<div class="section grey lighten-4 scrollspy" id="inventory">
     <div class="container">
         <h1 class="roboto-regular">Inventarios</h1>
         <div class="row">
             <div class="col s12 m6 l3 hvr-float-shadow">
+                <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
                 <h4 class="roboto-thin">Catálogos</h4>
             </div>
-            <div class="col s12 m6 l3 center hvr-float-shadow">
-                <i class="material-icons md-48 cyan-text">layers</i>
+            <div class="col s12 m6 l3 hvr-float-shadow">
+                <div style="background-color: #00acc1; max-width: 50px; min-height: 16px;"></div>
                 <h4 class="roboto-thin">Artículos</h4>
             </div>
-            <div class="col s12 m6 l3 center hvr-float-shadow">
-                <i class="material-icons md-48 cyan-text">assignment</i>
+            <div class="col s12 m6 l3 hvr-float-shadow">
+                <div style="background-color: #00acc1; max-width: 50px; min-height: 16px;"></div>
                 <h4 class="roboto-thin">Existencias</h4>
             </div>
-            <div class="col s12 m6 l3 center hvr-float-shadow">
-                <i class="material-icons md-48 cyan-text">local_shipping</i>
+            <div class="col s12 m6 l3 hvr-float-shadow">
+                <div style="background-color: #00acc1; max-width: 50px; min-height: 16px;"></div>
                 <h4 class="roboto-thin">Móviles</h4>
             </div>
         </div>
@@ -51,16 +52,16 @@ $this->title = 'Panel de Control';
     <div class="parallax"><img src="\img\lenses.jpg" alt=""></div>
 </div>
 <!-- Clientes -->
-<div class="section grey lighten-4">
+<div class="section grey lighten-4 scrollspy" id="clients">
     <div class="container">
         <h1 class="roboto-regular">Clientes</h1>
         <div class="row">
-            <div class="col s12 m6 center hvr-underline-from-left">
-                <i class="material-icons md-96 cyan-text">perm_identity</i>
+            <div class="col s12 m6 hvr-underline-from-left">
+                <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
                 <h4 class="roboto-thin">Perfiles</h4>
             </div>
-            <div class="col s12 m6 center hvr-underline-from-left">
-                <i class="material-icons md-96 cyan-text">add</i>
+            <div class="col s12 m6 hvr-underline-from-left">
+                <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
                 <h4 class="roboto-thin">Crear</h4>
             </div>
         </div>
@@ -70,20 +71,20 @@ $this->title = 'Panel de Control';
     <div class="parallax"><img src="\img\people.jpg" alt=""></div>
 </div>
 <!-- Documentos -->
-<div class="section grey lighten-4">
+<div class="section grey lighten-4 scrollspy" id="documents">
     <div class="container">
         <h1 class="roboto-regular">Documentos</h1>
         <div class="row">
-            <div class="col s12 m4 center hvr-grow-rotate">
-                <i class="material-icons md-96 cyan-text">receipt</i>
+            <div class="col s12 m4 hvr-grow-rotate">
+                <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
                 <h4 class="roboto-thin">Facturas</h4>
             </div>
-            <div class="col s12 m4 center hvr-grow-rotate">
-                <i class="material-icons md-96 cyan-text">subject</i>
+            <div class="col s12 m4 hvr-grow-rotate">
+                <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
                 <h4 class="roboto-thin">Pedidos</h4>
             </div>
-            <div class="col s12 m4 center hvr-grow-rotate">
-                <i class="material-icons md-96 cyan-text">toc</i>
+            <div class="col s12 m4 hvr-grow-rotate">
+                <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
                 <h4 class="roboto-thin">Presupuestos</h4>
             </div>
         </div>
@@ -91,4 +92,15 @@ $this->title = 'Panel de Control';
 </div>
 <div class="parallax-container">
     <div class="parallax"><img src="\img\whitepapers.jpg" alt=""></div>
+</div>
+<!-- Table of Contents -->
+<div class="row content-table">
+    <div class="col hide-on-small-only m3 l2">
+        <ul class="section table-of-contents">
+            <li><a href="#home" class="white-text">Inicio</a></li>
+            <li><a href="#inventory" class="white-text">Inventario</a></li>
+            <li><a href="#clients" class="white-text">Clientes</a></li>
+            <li><a href="#documents" class="white-text">Documentos</a></li>
+        </ul>
+    </div>
 </div>

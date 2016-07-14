@@ -151,3 +151,14 @@ video {
 .video-header--container {
     min-height: 700px;
 }
+
+.content-table {
+    z-index: 3;
+    position: fixed;
+    top: 45%;
+    right: 0px;
+    display: block;
+    float: right;
+
+    background-color: rgba(0, 89, 255, 0.35);
+}
