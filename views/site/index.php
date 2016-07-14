@@ -27,7 +27,10 @@ $this->title = 'Panel de Control';
 <!-- Inventarios -->
 <div class="section grey lighten-4 scrollspy" id="inventory">
     <div class="container">
-        <h1 class="roboto-regular">Inventarios</h1>
+        <h1 class="roboto-regular">
+            <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
+            Inventarios
+        </h1>
         <div class="row">
             <div class="col s12 m6 l3 hvr-float-shadow">
                 <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
@@ -48,13 +51,54 @@ $this->title = 'Panel de Control';
         </div>
     </div>
 </div>
-<div class="parallax-container">
-    <div class="parallax"><img src="\img\lenses.jpg" alt=""></div>
+<div class="section white no-padding">
+    <div class="row" style="margin: 0px; padding: 0px;">
+        <div class="col s12 l4">
+            <div class="overlay-wrapper">
+                <img src="/img/showcase/lenses.jpg" alt="" class="responsive-img">
+                <div class="overlay-content">
+                    <a href="#lentes">
+                        <div class="overlay-text_area">
+                            <h4 class="roboto-thin">Lentes</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4">
+            <div class="overlay-wrapper">
+                <img src="/img/showcase/red_camera.jpg" alt="" class="responsive-img">
+                <div class="overlay-content">
+                    <a href="#camaras">
+                        <div class="overlay-text_area">
+                            <h4 class="roboto-thin">Cámaras</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4">
+            <div class="overlay-wrapper">
+                <img src="/img/showcase/filters.jpg" alt="" class="responsive-img">
+                <div class="overlay-content">
+                    <a href="#hello">
+                        <div class="overlay-text_area">
+                            <h4 class="roboto-thin">Filtros</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- Clientes -->
 <div class="section grey lighten-4 scrollspy" id="clients">
     <div class="container">
-        <h1 class="roboto-regular">Clientes</h1>
+
+        <h1 class="roboto-regular">
+            <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
+            Clientes
+        </h1>
         <div class="row">
             <div class="col s12 m6 hvr-underline-from-left">
                 <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
@@ -73,7 +117,10 @@ $this->title = 'Panel de Control';
 <!-- Documentos -->
 <div class="section grey lighten-4 scrollspy" id="documents">
     <div class="container">
-        <h1 class="roboto-regular">Documentos</h1>
+        <h1 class="roboto-regular">
+            <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
+            Documentos
+        </h1>
         <div class="row">
             <div class="col s12 m4 hvr-grow-rotate">
                 <div style="background-color: #00acc1; max-width: 50px; min-height: 15px;"></div>
