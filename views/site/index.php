@@ -22,8 +22,7 @@ $this->title = 'Panel de Control';
         </div>
     </div>
     <video autoplay poster="" id="bgvid" loop>
-        <source src="/video/file.webm" type="video/webm">
-        <source src="/video/file.mp4" type="video/mp4">
+        <source src="/video/CDMX.webm" type="video/webm">
     </video>
 </div>
 <!-- Inventarios -->
@@ -146,10 +145,26 @@ $this->title = 'Panel de Control';
 <div class="row content-table">
     <div class="col hide-on-small-only m3 l2">
         <ul class="section table-of-contents">
-            <li><a href="#home" class="white-text">Inicio</a></li>
-            <li><a href="#inventory" class="white-text">Inventario</a></li>
-            <li><a href="#clients" class="white-text">Clientes</a></li>
-            <li><a href="#documents" class="white-text">Documentos</a></li>
+            <li>
+                <a href="#home" class="white-text">
+                    🔘 Inicio
+                </a>
+            </li>
+            <li>
+                <a href="#inventory" class="white-text">
+                    🔘 Inventario
+                </a>
+            </li>
+            <li>
+                <a href="#clients" class="white-text">
+                    🔘 Clientes
+                </a>
+            </li>
+            <li>
+                <a href="#documents" class="white-text">
+                    🔘 Documentos
+                </a>
+            </li>
         </ul>
     </div>
 </div>

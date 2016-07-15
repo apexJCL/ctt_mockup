@@ -157,5 +157,15 @@ video {
     right: 0px;
     display: block;
     float: right;
-    background-color: rgba(0, 147, 255, 0.35);
+}
+
+.table-of-contents a {
+    opacity: 0;
+}
+
+.table-of-contents a.active {
+    opacity: 1;
+    border: 0;
+    min-width: 150px;
+    background-color: #00d3ff;
 }
