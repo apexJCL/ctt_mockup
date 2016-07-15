@@ -146,6 +146,10 @@ video {
     min-height: 700px;
 }
 
+.login img {
+    border-radius: 20px;
+}
+
 .video-header--container {
     min-height: 700px;
 }
