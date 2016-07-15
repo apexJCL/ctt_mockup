@@ -169,3 +169,7 @@ video {
     min-width: 150px;
     background-color: #00d3ff;
 }
+
+nav {
+    background-color: rgba(20, 52, 78, 0.6);
+}

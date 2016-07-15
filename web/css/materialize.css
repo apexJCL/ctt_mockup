@@ -3738,7 +3738,7 @@ ul {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #212121; }
+  border-left: 5px solid #4fc3f7; }
 
 i {
   line-height: inherit; }
@@ -3774,7 +3774,7 @@ video.responsive-video {
   .pagination li.active a {
     color: #fff; }
   .pagination li.active {
-    background-color: #212121; }
+    background-color: #4fc3f7; }
   .pagination li.disabled a {
     cursor: default;
     color: #999; }
@@ -3909,7 +3909,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #212121; }
+  background-color: #4fc3f7; }
   footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
@@ -4656,7 +4656,7 @@ input[type=range] + .thumb {
 
 nav {
   color: #fff;
-  background-color: #212121;
+  background-color: #4fc3f7;
   width: 100%;
   height: 56px;
   line-height: 56px; }
@@ -4762,11 +4762,11 @@ nav {
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 50px;
-    line-height: 50px; }
+    height: 98px;
+    line-height: 98px; }
 
   .navbar-fixed {
-    height: 50px; } }
+    height: 98px; } }
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Thin), url("../fonts/Roboto-Thin.eot");
@@ -5107,7 +5107,7 @@ small {
     width: 15%;
     min-width: 80px; }
     .tabs .tab a {
-      color: #212121;
+      color: #4fc3f7;
       display: block;
       width: 100%;
       height: 100%;
@@ -5115,15 +5115,15 @@ small {
       overflow: hidden;
       transition: color .28s ease; }
       .tabs .tab a:hover {
-        color: #545454; }
+        color: #b1e4fb; }
     .tabs .tab.disabled a {
-      color: #545454;
+      color: #b1e4fb;
       cursor: default; }
   .tabs .indicator {
     position: absolute;
     bottom: 0;
     height: 2px;
-    background-color: #474747;
+    background-color: #98dcfa;
     will-change: left, right; }
 
 .material-tooltip {
@@ -6669,7 +6669,7 @@ input[type=range]:focus::-ms-fill-upper {
       transform: translateX(105%); } }
 .side-nav .collapsible-body li.active,
 .side-nav.fixed .collapsible-body li.active {
-  background-color: #212121; }
+  background-color: #4fc3f7; }
   .side-nav .collapsible-body li.active a,
   .side-nav.fixed .collapsible-body li.active a {
     color: #fff; }
