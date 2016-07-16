@@ -14,12 +14,12 @@ class MaterializeAsset extends AssetBundle{
     public $sourcePath = '@bower/materialize/dist';
     public $publishOptions = [
         'only' => [
-            'js/*.min.js',
+            'js/materialize.js',
         ]
     ];
     
     public $js = [
-        'js/materialize.min.js'
+        'js/materialize.js'
     ];
 
 }

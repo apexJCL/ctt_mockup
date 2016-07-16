@@ -1,6 +1,38 @@
 @import "../../vendor/bower/materialize/sass/components/color";
+// Configuración de los colores
 $primary-color: color("light-blue", "lighten-2") !default;
 $secondary-color: color('cyan', 'base') !default;
-$navbar-height: 98px !default;
+// Configuración de la altura de la barra de navegación
+$navbar-height: 15vh !default;
+$navbar-height-mobile: 10vh !default;
+// Tamaño del "brand-logo"
+$navbar-brand-font-size: 1.2rem !default;
+// Configuración de la ruta de las fuentes
 $roboto-font-path: '../fonts/';
 @import "../../vendor/bower/materialize/sass/materialize";
+
+//Fonts
+
+.raleway-bold {
+  font-family: 'Raleway', sans-serif;
+}
+
+.raleway-bold {
+  @extend .raleway-bold;
+  font-weight: 700;
+}
+
+// Containers
+
+.container-small {
+  @extend .container;
+  width: 50% !important;
+  @media only screen and (max-width: 600px) {
+    width: 90% !important;
+  }
+}
+
+.section-big {
+  @extend .section;
+  min-height: 498px !important;
+}

@@ -4,4 +4,4 @@
 <li><a href="#clients" class="raleway-regular">CLIENTES</a></li>
 <li><a href="#documents" class="raleway-regular">DOCUMENTOS</a></li>
 <li><a href="#" class="raleway-regular">USUARIOS</a></li>
-<li><a href="<?= Url::to(['login']) ?>" data-method="post" class="raleway-regular">INICIAR SESIÓN</a></li>
+<li><a href="#login-modal" class="raleway-regular modal-trigger">INICIAR SESIÓN</a></li>

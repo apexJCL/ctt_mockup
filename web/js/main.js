@@ -3,4 +3,5 @@ $(document).ready(function () {
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
     $('.tabs-wrapper .row').pushpin();
+    $('.modal-trigger').leanModal();
 });

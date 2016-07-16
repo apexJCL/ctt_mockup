@@ -177,25 +177,3 @@ video {
 nav {
     background-color: rgba(20, 52, 78, 0.6);
 }
-
-.raleway {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
-
-.raleway-regular {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-}
-
-.container {
-    width: 40% !important;
-}
-
-.section {
-    min-height: 498px !important;
-}
-
-.parallax-container {
-    height: 700px;
-}
