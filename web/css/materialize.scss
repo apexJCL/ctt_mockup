@@ -13,12 +13,12 @@ $roboto-font-path: '../fonts/';
 
 //Fonts
 
-.raleway-bold {
+.raleway {
   font-family: 'Raleway', sans-serif;
 }
 
 .raleway-bold {
-  @extend .raleway-bold;
+  @extend .raleway;
   font-weight: 700;
 }
 
@@ -34,5 +34,16 @@ $roboto-font-path: '../fonts/';
 
 .section-big {
   @extend .section;
-  min-height: 498px !important;
+  min-height: 400px !important;
+}
+
+.home-logo {
+  margin-top: 200px;
+  @media only screen and (max-width: 992px) {
+    margin-top: 0px;
+  }
+}
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.90);
 }

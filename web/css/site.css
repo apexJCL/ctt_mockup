@@ -154,24 +154,94 @@ video {
     min-height: 700px;
 }
 
+
+/* Lateral Menu Styles */
+
+
+/*
+*
+*   Keyframe effects
+*
+*/
+
+/*Google Chrome Support*/
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/*Mozilla Firefox Support*/
+@-moz-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/*General Support*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
 .content-table {
     z-index: 3;
     position: fixed;
     top: 45%;
     right: 0px;
-    display: block;
+    display: inline;
     float: right;
+    min-width: 10vw;
+    text-align: right;
 }
 
-.table-of-contents a {
+.table-of-contents a span {
     opacity: 0;
+    color: rgba(0, 164, 255, 0.81);
+}
+
+.table-of-contents a span:hover {
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    -o-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 0.2s;
+    -moz-animation-duration: 0.2s;
+    -o-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+}
+
+.table-of-contents a:hover {
+    border: 0;
 }
 
 .table-of-contents a.active {
     opacity: 1;
     border: 0;
-    min-width: 150px;
-    background-color: #00d3ff;
+}
+
+.table-of-contents ul li a div svg circle {
+    stroke: grey;
+    stroke-width: 2;
+    color: transparent;
+    fill: currentColor;
+}
+
+.table-of-contents ul li a div svg circle:hover {
+    color: grey;
+    fill: currentColor;
+}
+
+.table-of-contents ul li a.active div svg circle {
+    color: grey;
+    fill: currentColor;
+}
+
+.table-of-contents a.active span {
+    opacity: 1;
 }
 
 nav {

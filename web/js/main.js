@@ -1,7 +1,7 @@
 $(document).ready(function () {
+    // Materialize Initialization
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
-    $('.tabs-wrapper .row').pushpin();
     $('.modal-trigger').leanModal();
 });

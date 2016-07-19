@@ -7767,7 +7767,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-.raleway-bold {
+.raleway, .raleway-bold {
   font-family: 'Raleway', sans-serif; }
 
 .raleway-bold {
@@ -7780,6 +7780,15 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       width: 90% !important; } }
 
 .section-big {
-  min-height: 498px !important; }
+  min-height: 400px !important; }
+
+.home-logo {
+  margin-top: 200px; }
+  @media only screen and (max-width: 992px) {
+    .home-logo {
+      margin-top: 0px; } }
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.9); }
 
 /*# sourceMappingURL=materialize.css.map */

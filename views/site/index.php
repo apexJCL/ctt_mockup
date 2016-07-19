@@ -3,14 +3,13 @@ use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-/* @var $this yii\web\View */
 $this->title = 'Panel de Control';
 ?>
 
 <!-- Welcome -->
 <div class="video-header--container scrollspy" id="home">
     <div class="login">
-        <div class="row" style="margin-top: 200px">
+        <div class="row home-logo">
             <div class="col s12 m6 offset-m3 l4 offset-l2 center">
                 <img src="/img/logo.png" alt="" class="responsive-img">
             </div>
@@ -54,51 +53,12 @@ $this->title = 'Panel de Control';
         </div>
     </div>
 </div>
-<!--<div class="section white no-padding">
-    <div class="row" style="margin: 0px; padding: 0px;">
-        <div class="col s12 l4">
-            <div class="overlay-wrapper">
-                <img src="/img/showcase/lenses.jpg" alt="" class="responsive-img">
-                <div class="overlay-content">
-                    <a href="<?/*= Url::to(['showcase/index']) */?>">
-                        <div class="overlay-text_area">
-                            <h4 class="roboto-thin">Lentes</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 l4">
-            <div class="overlay-wrapper">
-                <img src="/img/showcase/red_camera.jpg" alt="" class="responsive-img">
-                <div class="overlay-content">
-                    <a href="#camaras">
-                        <div class="overlay-text_area">
-                            <h4 class="roboto-thin">Cámaras</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 l4">
-            <div class="overlay-wrapper">
-                <img src="/img/showcase/filters.jpg" alt="" class="responsive-img">
-                <div class="overlay-content">
-                    <a href="#hello">
-                        <div class="overlay-text_area">
-                            <h4 class="roboto-thin">Filtros</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
 <!-- Clientes -->
 <div class="parallax-container" style="background-color: rgba(41, 103, 155, 0.4);">
     <div class="container-small">
         <h1 class="raleway-bold">
-            <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>
+            <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;" id="clients"
+                 class="scrollspy"></div>
             Clientes
         </h1>
         <div class="row">
@@ -113,58 +73,127 @@ $this->title = 'Panel de Control';
     <div class="parallax"><img src="\img\filters.jpg" alt="" style="opacity: 0.7" class="responsive-img"></div>
 </div>
 <!-- Documentos -->
-<div class="section grey lighten-4 scrollspy" id="documents">
+<div class="section-big grey lighten-4 scrollspy" id="documents">
     <div class="container-small">
         <h1 class="raleway-bold">
             <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>
             Documentos
         </h1>
         <div class="row">
-            <div class="col s12 m4 hvr-grow-rotate">
-                <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>
-                <h4 class="roboto-thin">Facturas</h4>
+            <div class="col s12 raleway">
+                I'm a paragraph. Click here to add your own text and edit me.
+                It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the
+                font.
             </div>
-            <div class="col s12 m4 hvr-grow-rotate">
-                <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>
-                <h4 class="roboto-thin">Pedidos</h4>
-            </div>
-            <div class="col s12 m4 hvr-grow-rotate">
-                <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>
-                <h4 class="roboto-thin">Presupuestos</h4>
-            </div>
+            <!--            <div class="col s12 m4 hvr-grow-rotate">-->
+            <!--                <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>-->
+            <!--                <h6 class="raleway">FACTURAS</h6>-->
+            <!--            </div>-->
+            <!--            <div class="col s12 m4 hvr-grow-rotate">-->
+            <!--                <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>-->
+            <!--                <h6 class="raleway">PEDIDOS</h6>-->
+            <!--            </div>-->
+            <!--            <div class="col s12 m4 hvr-grow-rotate">-->
+            <!--                <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>-->
+            <!--                <h6 class="raleway">PRESUPUESTOS</h6>-->
+            <!--            </div>-->
         </div>
     </div>
 </div>
 <div class="parallax-container">
     <div class="parallax"><img src="\img\whitepapers.jpg" alt="" class="responsive-img"></div>
 </div>
+<!-- Usuarios -->
+<div class="section-big grey lighten-4 scrollspy" id="users">
+    <div class="container-small">
+        <h1 class="raleway-bold">
+            <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>
+            Usuarios
+        </h1>
+        <div class="row raleway">
+            <div class="col s12">
+                I'm a paragraph. Click here to add your own text and edit me.
+                It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the
+                font
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- Table of Contents -->
+<!--<div class="row content-table">-->
+<!--    <div class="col hide-on-small-only m3 l2">-->
+<!--        <ul class="section-big table-of-contents">-->
+<!--            <li>-->
+<!--                <a href="#home" class="white-text">-->
+<!--                    <svg width="12" height="12" viewBox="0 0 24 24">-->
+<!--                        <circle cx="12" cy="12" r="10"></circle>-->
+<!--                    </svg>-->
+<!--                    <span>Inicio</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#inventory" class="white-text">Inventario</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#clients" class="white-text">Clientes</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#documents" class="white-text">Documentos</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
 <div class="row content-table">
-    <div class="col hide-on-small-only m3 l2">
-        <ul class="section table-of-contents">
-            <li>
-                <a href="#home" class="white-text">
-                    🔘 Inicio
-                </a>
-            </li>
-            <li>
-                <a href="#inventory" class="white-text">
-                    🔘 Inventario
-                </a>
-            </li>
-            <li>
-                <a href="#clients" class="white-text">
-                    🔘 Clientes
-                </a>
-            </li>
-            <li>
-                <a href="#documents" class="white-text">
-                    🔘 Documentos
-                </a>
-            </li>
+    <div class="col hide-on-small-only table-of-contents">
+        <ul>
+            <li><a href="#home">
+                    <div>
+                        <span>Inicio</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#inventory">
+                    <div>
+                        <span>Inventario</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#clients">
+                    <div>
+                        <span>Clientes</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#documents">
+                    <div>
+                        <span>Documentos</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#users">
+                    <div>
+                        <span>Usuarios</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
         </ul>
     </div>
 </div>
+
+
+
 <!-- Modal Structure -->
 <div id="login-modal" class="modal">
     <div class="modal-content">
