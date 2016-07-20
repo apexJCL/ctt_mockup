@@ -32,6 +32,14 @@ $roboto-font-path: '../fonts/';
   }
 }
 
+.container-lazy {
+  @extend .container;
+  width: 80% !important;
+  @media only screen and (max-width: 600px) {
+    width: 90% !important;
+  }
+}
+
 .section-big {
   @extend .section;
   min-height: 400px !important;
@@ -46,4 +54,18 @@ $roboto-font-path: '../fonts/';
 
 .modal {
   background-color: rgba(255, 255, 255, 0.90);
+}
+
+.margin-big {
+  margin: 200px 0;
+  @media only screen and (max-width: 992px) {
+    margin: 0;
+  }
+}
+
+.title-margin {
+  margin-top: 300px;
+  @media only screen and (max-width: 992px) {
+    margin: 0;
+  }
 }

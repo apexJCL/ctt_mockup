@@ -4216,18 +4216,18 @@ input[type=range] + .thumb {
   text-rendering: optimizeLegibility;
   font-feature-settings: 'liga'; }
 
-.container, .container-small {
+.container, .container-small, .container-lazy {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%; }
 
 @media only screen and (min-width: 601px) {
-  .container, .container-small {
+  .container, .container-small, .container-lazy {
     width: 85%; } }
 @media only screen and (min-width: 993px) {
-  .container, .container-small {
+  .container, .container-small, .container-lazy {
     width: 70%; } }
-.container .row, .container-small .row {
+.container .row, .container-small .row, .container-lazy .row {
   margin-left: -0.75rem;
   margin-right: -0.75rem; }
 
@@ -7779,6 +7779,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     .container-small {
       width: 90% !important; } }
 
+.container-lazy {
+  width: 80% !important; }
+  @media only screen and (max-width: 600px) {
+    .container-lazy {
+      width: 90% !important; } }
+
 .section-big {
   min-height: 400px !important; }
 
@@ -7790,5 +7796,17 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .modal {
   background-color: rgba(255, 255, 255, 0.9); }
+
+.margin-big {
+  margin: 200px 0; }
+  @media only screen and (max-width: 992px) {
+    .margin-big {
+      margin: 0; } }
+
+.title-margin {
+  margin-top: 300px; }
+  @media only screen and (max-width: 992px) {
+    .title-margin {
+      margin: 0; } }
 
 /*# sourceMappingURL=materialize.css.map */

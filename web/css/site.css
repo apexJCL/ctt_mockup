@@ -29,7 +29,6 @@ a.asc:after, a.desc:after {
     font-family: 'Glyphicons Halflings';
     font-style: normal;
     font-weight: normal;
-    line-height: 1;
     padding-left: 5px;
 }
 
@@ -151,7 +150,7 @@ video {
 }
 
 .video-header--container {
-    min-height: 700px;
+    min-height: 100vh;
 }
 
 
@@ -264,11 +263,6 @@ nav {
     background-color: rgba(20, 52, 78, 0.6);
 }
 
-.showcase {
-    padding: 0;
-    margin: 0;
-}
-
 .showcase .row {
     margin: 0;
     padding: 0;
@@ -277,7 +271,6 @@ nav {
 .showcase .col {
     padding: 0;
     margin: 0;
-    max-height: 336px;
 }
 
 .showcase img {
@@ -287,6 +280,7 @@ nav {
 
 .caption-container {
     position: relative;
+    display: table-cell;
 }
 
 .caption-container--container {
@@ -341,6 +335,19 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+.caption-container img {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.center-in-parent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
 .grey-overlay {
     background-color: rgba(127, 127, 127, 0.7);
 }
@@ -357,7 +364,10 @@ nav {
     background-color: rgba(41, 103, 155, 0.7);
 }
 
-.image-full {
-    min-width: 100%;
-    min-height: 100%;
+.row .col {
+    overflow: hidden;
+}
+
+.no-margin {
+    margin: 0;
 }
