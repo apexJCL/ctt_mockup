@@ -180,6 +180,22 @@ video {
     to { opacity: 1; }
 }
 
+/*Google Chrome Support*/
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+/*Mozilla Firefox Support*/
+@-moz-keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+/*General Support*/
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 
 .content-table {
     z-index: 3;
@@ -194,7 +210,7 @@ video {
 
 .table-of-contents a span {
     opacity: 0;
-    color: rgba(0, 164, 255, 0.81);
+    color: rgba(145, 145, 145, 0.81);
 }
 
 .table-of-contents a span:hover {
@@ -246,4 +262,102 @@ video {
 
 nav {
     background-color: rgba(20, 52, 78, 0.6);
+}
+
+.showcase {
+    padding: 0;
+    margin: 0;
+}
+
+.showcase .row {
+    margin: 0;
+    padding: 0;
+}
+
+.showcase .col {
+    padding: 0;
+    margin: 0;
+    max-height: 336px;
+}
+
+.showcase img {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.caption-container {
+    position: relative;
+}
+
+.caption-container--container {
+    position: absolute;
+    vertical-align: middle;
+    top:0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    /*Effects*/
+    -webkit-animation: fadeOut ease-in 1;
+    -moz-animation: fadeOut ease-in 1;
+    -o-animation: fadeOut ease-in 1;
+    animation: fadeOut ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+}
+
+.caption-container--container:hover {
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    -o-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 0.2s;
+    -moz-animation-duration: 0.2s;
+    -o-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+}
+
+.caption-container--text {
+    position: absolute;
+    -ms-text-align-last: right;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.grey-overlay {
+    background-color: rgba(127, 127, 127, 0.7);
+}
+
+.blue-overlay {
+    background-color: rgba(0, 37, 127, 0.7);
+}
+
+.cyan-overlay {
+    background-color: rgba(0, 110, 127, 0.7);
+}
+
+.primary-overlay {
+    background-color: rgba(41, 103, 155, 0.7);
+}
+
+.image-full {
+    min-width: 100%;
+    min-height: 100%;
 }

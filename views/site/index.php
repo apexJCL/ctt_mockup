@@ -73,7 +73,7 @@ $this->title = 'Panel de Control';
     <div class="parallax"><img src="\img\filters.jpg" alt="" style="opacity: 0.7" class="responsive-img"></div>
 </div>
 <!-- Documentos -->
-<div class="section-big grey lighten-4 scrollspy" id="documents">
+<div class="section-big white scrollspy" id="documents">
     <div class="container-small">
         <h1 class="raleway-bold">
             <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>
@@ -85,26 +85,101 @@ $this->title = 'Panel de Control';
                 It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the
                 font.
             </div>
-            <!--            <div class="col s12 m4 hvr-grow-rotate">-->
-            <!--                <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>-->
-            <!--                <h6 class="raleway">FACTURAS</h6>-->
-            <!--            </div>-->
-            <!--            <div class="col s12 m4 hvr-grow-rotate">-->
-            <!--                <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>-->
-            <!--                <h6 class="raleway">PEDIDOS</h6>-->
-            <!--            </div>-->
-            <!--            <div class="col s12 m4 hvr-grow-rotate">-->
-            <!--                <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>-->
-            <!--                <h6 class="raleway">PRESUPUESTOS</h6>-->
-            <!--            </div>-->
         </div>
     </div>
 </div>
-<div class="parallax-container">
-    <div class="parallax"><img src="\img\whitepapers.jpg" alt="" class="responsive-img"></div>
+
+<div class="showcase">
+    <div class="row no-padding">
+        <div class="col s12 m6 l4 no-padding caption-container">
+            <img src="/img/showcase/1.jpg" alt="">
+            <div class="caption-container--container primary-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">Cámara</h4>
+                    <p class="white-text raleway">Equipos de alto desempeño</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4 no-padding caption-container">
+            <img src="/img/showcase/2.jpg" alt="">
+            <div class="caption-container--container primary-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">Lentes</h4>
+                    <p class="white-text raleway">Las marcas de mayor prestigio</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4 no-padding caption-container">
+            <img src="/img/showcase/3.jpg" alt="">
+            <div class="caption-container--container primary-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">Cabezas</h4>
+                    <p class="white-text raleway">Ámplia variedad de cabezas y sistemas rieles</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4 no-padding caption-container">
+            <img src="/img/showcase/4.jpg" alt="">
+            <div class="caption-container--container primary-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">ARRI Lens</h4>
+                    <p class="white-text raleway">Principal distribuidor de ARRI en México</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4 no-padding caption-container">
+            <img src="/img/showcase/5.jpg" alt="">
+            <div class="caption-container--container primary-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">Electrónicos</h4>
+                    <p class="white-text raleway">Lo más sofisticado y avanzado en equipos</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4 no-padding caption-container">
+            <img src="/img/showcase/6.jpg" alt="">
+            <div class="caption-container--container primary-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">Grúas</h4>
+                    <p class="white-text raleway">Ámplio soporte de grúas Eléctricas</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Estadísticas -->
+<div class="section-big white scrollspy" id="statistics">
+    <div class="container-small">
+        <h1 class="raleway-bold">
+            <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>
+            Estadísticas
+        </h1>
+        <div class="row raleway">
+            <div class="col s12">
+                I'm a paragraph. Click here to add your own text and edit me.
+                It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the
+                font
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row center">
+            <div class="col s12 m6 l3"><img src="http://placehold.it/350x250" alt="" class="responsive-img"></div>
+            <div class="col s12 m6 l3"><img src="http://placehold.it/350x250" alt="" class="responsive-img"></div>
+            <div class="col s12 m6 l3"><img src="http://placehold.it/350x250" alt="" class="responsive-img"></div>
+            <div class="col s12 m6 l3"><img src="http://placehold.it/350x250" alt="" class="responsive-img"></div>
+            <div class="col s12 m6 l3"><img src="http://placehold.it/350x250" alt="" class="responsive-img"></div>
+            <div class="col s12 m6 l3"><img src="http://placehold.it/350x250" alt="" class="responsive-img"></div>
+            <div class="col s12 m6 l3"><img src="http://placehold.it/350x250" alt="" class="responsive-img"></div>
+            <div class="col s12 m6 l3"><img src="http://placehold.it/350x250" alt="" class="responsive-img"></div>
+        </div>
+    </div>
+</div>
+
+
 <!-- Usuarios -->
-<div class="section-big grey lighten-4 scrollspy" id="users">
+<div class="section-big grey lighten-2 scrollspy" id="users">
     <div class="container-small">
         <h1 class="raleway-bold">
             <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;"></div>
@@ -119,38 +194,74 @@ $this->title = 'Panel de Control';
         </div>
     </div>
 </div>
+<div class="showcase no-padding">
+    <div class="row no-padding">
+        <div class="col s12 m6 l3 no-padding caption-container">
+            <img src="/img/users/1.jpg" alt="">
+            <div class="caption-container--container grey-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">David Salazar</h4>
+                    <p class="white-text raleway">Social Strategist</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3 no-padding caption-container">
+            <img src="/img/users/2.jpg" alt="">
+            <div class="caption-container--container grey-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">Ashley Stewart</h4>
+                    <p class="white-text raleway">Community Manager</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3 no-padding caption-container">
+            <img src="/img/users/3.jpg" alt="">
+            <div class="caption-container--container grey-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">Patrick Stone</h4>
+                    <p class="white-text raleway">PR Manager</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3 no-padding caption-container">
+            <img src="/img/users/4.jpg" alt="">
+            <div class="caption-container--container grey-overlay">
+                <div class="caption-container--text">
+                    <h4 class="white-text raleway-bold">Lisa Riley</h4>
+                    <p class="white-text raleway">CEO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Reservaciones -->
+<div class="parallax-container" style="background-color: rgba(41, 103, 155, 0.4);">
+    <div class="container-small">
+        <h1 class="raleway-bold">
+            <div style="background-color:  rgba(61, 155, 233, 1); max-width: 50px; min-height: 15px;" id="clients"
+                 class="scrollspy"></div>
+            Clientes
+        </h1>
+        <div class="row">
+            <p class="raleway">
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                double click me to add your own content and make changes to the font. Feel free to drag and
+                drop me anywhere you like on your page. I’m a great place for you to tell a story and let your
+                users know a little more about you
+            </p>
+        </div>
+    </div>
+    <div class="parallax"><img src="\img\filters.jpg" alt="" style="opacity: 0.7" class="responsive-img"></div>
+</div>
 
 <!-- Table of Contents -->
-<!--<div class="row content-table">-->
-<!--    <div class="col hide-on-small-only m3 l2">-->
-<!--        <ul class="section-big table-of-contents">-->
-<!--            <li>-->
-<!--                <a href="#home" class="white-text">-->
-<!--                    <svg width="12" height="12" viewBox="0 0 24 24">-->
-<!--                        <circle cx="12" cy="12" r="10"></circle>-->
-<!--                    </svg>-->
-<!--                    <span>Inicio</span>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="#inventory" class="white-text">Inventario</a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="#clients" class="white-text">Clientes</a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="#documents" class="white-text">Documentos</a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</div>-->
 <div class="row content-table">
     <div class="col hide-on-small-only table-of-contents">
         <ul>
             <li><a href="#home">
                     <div>
-                        <span>Inicio</span>
+                        <span>INICIO</span>
                         <svg width="12" height="12" viewBox="0 0 24 24">
                             <circle cx="12" cy="12" r="10"></circle>
                         </svg>
@@ -158,7 +269,7 @@ $this->title = 'Panel de Control';
                 </a></li>
             <li><a href="#inventory">
                     <div>
-                        <span>Inventario</span>
+                        <span>INVENTARIOS</span>
                         <svg width="12" height="12" viewBox="0 0 24 24">
                             <circle cx="12" cy="12" r="10"></circle>
                         </svg>
@@ -166,7 +277,7 @@ $this->title = 'Panel de Control';
                 </a></li>
             <li><a href="#clients">
                     <div>
-                        <span>Clientes</span>
+                        <span>CLIENTES</span>
                         <svg width="12" height="12" viewBox="0 0 24 24">
                             <circle cx="12" cy="12" r="10"></circle>
                         </svg>
@@ -174,7 +285,15 @@ $this->title = 'Panel de Control';
                 </a></li>
             <li><a href="#documents">
                     <div>
-                        <span>Documentos</span>
+                        <span>DOCUMENTOS</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#statistics">
+                    <div>
+                        <span>ESTADÍSTICAS</span>
                         <svg width="12" height="12" viewBox="0 0 24 24">
                             <circle cx="12" cy="12" r="10"></circle>
                         </svg>
@@ -182,7 +301,7 @@ $this->title = 'Panel de Control';
                 </a></li>
             <li><a href="#users">
                     <div>
-                        <span>Usuarios</span>
+                        <span>USUARIOS</span>
                         <svg width="12" height="12" viewBox="0 0 24 24">
                             <circle cx="12" cy="12" r="10"></circle>
                         </svg>
@@ -191,7 +310,6 @@ $this->title = 'Panel de Control';
         </ul>
     </div>
 </div>
-
 
 
 <!-- Modal Structure -->
