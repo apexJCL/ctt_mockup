@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "bower-asset/materialize": ">=0.97.6",
-        "bower-asset/Hover": "*"
+        "bower-asset/Hover": "*",
+        "bower-asset/normalize.css": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

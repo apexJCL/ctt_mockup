@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "749148323213921ab9a32857bbb72bc6",
-    "content-hash": "833696676bf99e2f74ad5691c691407d",
+    "hash": "14aed72e78269f713854cdc4a1b47ebd",
+    "content-hash": "6396027e69fa76fc612548fff0a92827",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -249,6 +249,36 @@
             ]
         },
         {
+            "name": "bower-asset/normalize.css",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/necolas/normalize.css.git",
+                "reference": "fa7d65ab39f4c0623b6379793160a32254aa4ffe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/necolas/normalize.css/zipball/fa7d65ab39f4c0623b6379793160a32254aa4ffe",
+                "reference": "fa7d65ab39f4c0623b6379793160a32254aa4ffe",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "normalize.css",
+                "bower-asset-ignore": [
+                    "CHANGELOG.md",
+                    "CONTRIBUTING.md",
+                    "package.json",
+                    "README.md",
+                    "test.html"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A modern alternative to CSS resets"
+        },
+        {
             "name": "bower-asset/punycode",
             "version": "v1.3.2",
             "source": {
@@ -372,16 +402,16 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.7.0",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "ae1828d955112356f7677c465f94f7deb7d27a40"
+                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/ae1828d955112356f7677c465f94f7deb7d27a40",
-                "reference": "ae1828d955112356f7677c465f94f7deb7d27a40",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
+                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
                 "shasum": ""
             },
             "require": {
@@ -412,7 +442,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2015-08-05 01:03:42"
+            "time": "2016-07-16 12:58:58"
         },
         {
             "name": "swiftmailer/swiftmailer",

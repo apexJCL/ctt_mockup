@@ -125,33 +125,51 @@ a.desc:after {
 .material-icons.md-96 { font-size: 96px; }
 .material-icons.md-128 { font-size: 128px; }
 
-/** Video */
-video {
+
+/*
+    Video Styling
+*/
+.background-video {
     position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100vh;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height:100%;
+    width: auto;
+    height: auto;
     z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
-    background-size: cover;
-    transition: 1s opacity;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-size: 100%;
 }
 
-.login {
-    background-color: rgba(41, 103, 155, 0.7);
-    padding: 10px 10px;
-    min-height: 100vh;
+@media screen and (max-device-width: 600px) {
+    html {
+        /*background: url(polina.jpg) #000 no-repeat center center fixed;*/
+    }
+    .background-video {
+        display: none;
+    }
 }
 
-.login img {
-    border-radius: 20px;
+/*
+
+Welcome Styling
+
+*/
+
+.welcome-section {
+    min-height:100vh;
+    padding: 150px 0;
 }
 
-.video-header--container {
-    min-height: 100vh;
+h1.page-title {
+    font-size: 5.6rem;
 }
+
 
 
 /* Lateral Menu Styles */
@@ -279,8 +297,9 @@ nav {
 }
 
 .caption-container {
+    min-height: inherit;
     position: relative;
-    display: table-cell;
+    overflow: hidden;
 }
 
 .caption-container--container {
@@ -364,10 +383,10 @@ nav {
     background-color: rgba(41, 103, 155, 0.7);
 }
 
-.row .col {
-    overflow: hidden;
+.no-margin {
+    margin: 0px 0px;
 }
 
-.no-margin {
-    margin: 0;
+.fill {
+    background-size: cover;
 }

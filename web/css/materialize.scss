@@ -3,7 +3,7 @@
 $primary-color: color("light-blue", "lighten-2") !default;
 $secondary-color: color('cyan', 'base') !default;
 // Configuración de la altura de la barra de navegación
-$navbar-height: 10vh !default;
+$navbar-height: 98px !default;
 $navbar-height-mobile: 10vh !default;
 // Tamaño del "brand-logo"
 $navbar-brand-font-size: 1.2rem !default;
@@ -42,7 +42,7 @@ $roboto-font-path: '../fonts/';
 
 .section-big {
   @extend .section;
-  min-height: 400px !important;
+  min-height: 498px !important;
 }
 
 .home-logo {

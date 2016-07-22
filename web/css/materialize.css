@@ -4762,11 +4762,11 @@ nav {
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 10vh;
-    line-height: 10vh; }
+    height: 98px;
+    line-height: 98px; }
 
   .navbar-fixed {
-    height: 10vh; } }
+    height: 98px; } }
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Thin), url("../fonts/Roboto-Thin.eot");
@@ -7786,7 +7786,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       width: 90% !important; } }
 
 .section-big {
-  min-height: 400px !important; }
+  min-height: 498px !important; }
 
 .home-logo {
   margin-top: 200px; }
