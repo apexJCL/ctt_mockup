@@ -100,7 +100,7 @@ $this->title = 'Panel de Control';
                     </p>
                 </div>
             </div>
-            <div class="parallax"><img src="\img\filters.jpg" alt="" style="opacity: 0.7" class="responsive-img"></div>
+            <div class="parallax"><img src="\img\filters.jpg" alt="" style="opacity: 0.7"></div>
         </div>
     </div>
 
