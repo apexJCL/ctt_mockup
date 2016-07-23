@@ -27,4 +27,8 @@
             </div>
         </div>
     </div>
+    <div class="footer-copyright grey darken-4">
+        <div class="container">
+        </div>
+    </div>
 </footer>

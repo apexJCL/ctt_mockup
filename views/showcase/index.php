@@ -1,14 +1,32 @@
 <?php
 /* @var $this yii\web\View */
 ?>
-<div class="parallax-container">
-    <div class="parallax"><img src="\img\showcase.jpg" alt=""></div>
+<div class="" style="
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height:100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+background-size: cover;
+">
+    <img src="/img/filters.jpg" alt="">
 </div>
 
+<div class="section-big">
+
+</div>
 <div class="section grey lighten-4 scrollspy" id="clients">
     <div class="container">
         <h1 class="raleway-bold">
-            <div style="background-color:  rgb(135, 74, 233); max-width: 50px; min-height: 15px;"></div>
+            <div class="thin-line blue"></div>
             Cámaras
         </h1>
     </div>
@@ -21,7 +39,7 @@
             </p>
         </div>
         <div class="col s12 center">
-            <img src="\img\showcase_full.jpg" alt="" class="responsive-img">
+            <img src="\img\filters.jpg" alt="" class="responsive-img materialboxed" data-caption="Filtros">
         </div>
         <div class="col s12">
             <a href="/" class="btn waves-effect blue">Regresar</a>
