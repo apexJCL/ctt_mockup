@@ -8,18 +8,68 @@ $navbar-height-mobile: 10vh !default;
 // Tamaño del "brand-logo"
 $navbar-brand-font-size: 1.2rem !default;
 // Configuración de la ruta de las fuentes
-$roboto-font-path: '../fonts/';
+$roboto-font-path: '../fonts/roboto/';
 @import "../../vendor/bower/materialize/sass/materialize";
 
 //Fonts
+
+/** Fonts **/
+
+.roboto-light {
+  font-family: "Roboto" !important;
+}
+
+.roboto-medium {
+  font-family: "Roboto Medium" !important;
+}
+
+.roboto-regular {
+  font-family: "Roboto Regular" !important;
+}
+
+.roboto-thin {
+  font-family: "Roboto Thin" !important;
+}
+
+.roboto-bold {
+  font-family: "Roboto Bold" !important;
+}
+
+/*
+
+Raleway Font Face
+
+*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../fonts/raleway/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Raleway Light";
+  src: url("../fonts/raleway/Raleway-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
 
 .raleway {
   font-family: 'Raleway', sans-serif;
 }
 
 .raleway-bold {
-  @extend .raleway;
-  font-weight: 700;
+  font-family: 'Raleway Bold', sans-serif;
+}
+
+.raleway-light {
+  font-family: 'Raleway Light', sans-serif;
 }
 
 // Containers
@@ -68,5 +118,21 @@ $roboto-font-path: '../fonts/';
   margin-top: 300px;
   @media only screen and (max-width: 992px) {
     margin: 0;
+  }
+}
+
+/*
+FAB Button Style
+*/
+
+.main-fab {
+  bottom: 45px;
+  left: 90vw;
+  @media only screen and (max-width: 600px) {
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 45px;
+    right: 40px;
   }
 }

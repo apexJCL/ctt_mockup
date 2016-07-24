@@ -30,7 +30,7 @@ phpunit.phar
 /node_modules
 
 # Roboto Fonts copied by Grunt
-web/fonts
+web/fonts/Roboto*
 
 # Sass precompiler cache
 web/css/.sass-cache
