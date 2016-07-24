@@ -25,80 +25,6 @@ $this->title = 'Panel de Control';
 
 <!-- Aquí comienza el sitio -->
 
-
-<!-- Table of Contents -->
-<div class="row content-table">
-    <div class="col hide-on-small-only table-of-contents">
-        <ul>
-            <li><a href="#home">
-                    <div>
-                        <span>INICIO</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"></circle>
-                        </svg>
-                    </div>
-                </a></li>
-            <li><a href="#inventory">
-                    <div>
-                        <span>INVENTARIOS</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"></circle>
-                        </svg>
-                    </div>
-                </a></li>
-            <li><a href="#clients">
-                    <div>
-                        <span>CLIENTES</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"></circle>
-                        </svg>
-                    </div>
-                </a></li>
-            <li><a href="#documents">
-                    <div>
-                        <span>DOCUMENTOS</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"></circle>
-                        </svg>
-                    </div>
-                </a></li>
-            <li><a href="#statistics">
-                    <div>
-                        <span>ESTADÍSTICAS</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"></circle>
-                        </svg>
-                    </div>
-                </a></li>
-            <li><a href="#users">
-                    <div>
-                        <span>USUARIOS</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"></circle>
-                        </svg>
-                    </div>
-                </a></li>
-            <li><a href="#reservations">
-                    <div>
-                        <span>RESERVACIONES</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"></circle>
-                        </svg>
-                    </div>
-                </a></li>
-            <li><a href="#support">
-                    <div>
-                        <span>SOPORTE</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"></circle>
-                        </svg>
-                    </div>
-                </a></li>
-        </ul>
-    </div>
-</div>
-
-
 <div>
     <!-- Fondo Video -->
     <div class="hide-on-small-and-down">
@@ -166,7 +92,7 @@ $this->title = 'Panel de Control';
                 </h1>
                 <div class="row">
                     <div class="col s12 m6 l6 center hvr-underline-from-center">
-                        <a href="" class=" white-text">
+                        <a href="<?= Url::to(['users/index']) ?>" class=" white-text">
                             <i class="material-icons md-96">assignment_ind</i>
                             <p class="raleway flow-text">Ver</p>
                         </a>
@@ -448,6 +374,79 @@ $this->title = 'Panel de Control';
 
 </div>
 
+
+<!-- Table of Contents -->
+<div class="row content-table">
+    <div class="col hide-on-small-only table-of-contents">
+        <ul>
+            <li><a href="#home">
+                    <div>
+                        <span>INICIO</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#inventory">
+                    <div>
+                        <span>INVENTARIOS</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#clients">
+                    <div>
+                        <span>CLIENTES</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#documents">
+                    <div>
+                        <span>DOCUMENTOS</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#statistics">
+                    <div>
+                        <span>ESTADÍSTICAS</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#users">
+                    <div>
+                        <span>USUARIOS</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#reservations">
+                    <div>
+                        <span>RESERVACIONES</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+            <li><a href="#support">
+                    <div>
+                        <span>SOPORTE</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                </a></li>
+        </ul>
+    </div>
+</div>
+
 <!-- Modal Structure -->
 <div id="login-modal" class="modal">
     <div class="modal-content">
@@ -466,7 +465,7 @@ $this->title = 'Panel de Control';
                         ],
                     ]); ?>
 
-                    <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+                    <?= $form->field($model, 'username')->textInput(['autofocus' => false]) ?>
 
                     <?= $form->field($model, 'password')->passwordInput() ?>
 
