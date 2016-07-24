@@ -3,6 +3,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: Ral;
 }
 
 footer.page-footer {
@@ -178,7 +179,8 @@ h1.page-title {
 .content-table {
     z-index: 3;
     position: fixed;
-    top: 45%;
+    font-family: Raleway;
+    top: 25%;
     right: 0px;
     display: inline;
     float: right;

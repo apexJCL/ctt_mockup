@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -13,8 +14,9 @@ $this->params['breadcrumbs'][] = $this->title;
 <?= $this->render('@app/views/layouts/_static_background', ['background_src' => '/img/sections/users/main.png']) ?>
 
 <div>
+    <!-- Sección en blanco para poder ver fondo -->
     <div class="section" style="min-height: 250px"></div>
-    <div class="section white">
+    <div class="section white" id="main">
         <?=
         Html::a('<i class="material-icons">add</i>', ['create'], [
             'class' => 'btn btn-floating btn-large waves-effect waves-light blue accent-2 main-fab'
@@ -31,7 +33,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     'dataProvider' => $dataProvider,
                     'columns' => [
                         ['class' => 'yii\grid\SerialColumn'],
-                        'nombre',
+                        [
+                            'header' => Html::a('Nombre', Url::to(['users/index?sort=nombre'])),
+                            'format' => 'raw',
+                            'value' => function ($data) {
+                                return Html::a($data->nombre, Url::to(['users/view', 'id' => $data->id]));
+                            }
+                        ],
                         'username',
                         'created_at',
                         'updated_at',

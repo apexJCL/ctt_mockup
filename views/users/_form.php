@@ -28,7 +28,7 @@ use yii\widgets\ActiveForm;
         <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
     </div>
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Crear' : 'Actualizar', ['class' => $model->isNewRecord ? 'btn waves-effect waves-light' : 'btn accent-2 waves-effect waves-light']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Crear' : 'Guardar', ['class' => $model->isNewRecord ? 'btn waves-effect waves-light' : 'btn accent-2 waves-effect waves-light']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

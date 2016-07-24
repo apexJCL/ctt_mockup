@@ -1,7 +1,6 @@
 $(document).ready(function () {
     // Materialize Initialization
     $(".button-collapse").sideNav();
-    $('.scrollspy').scrollSpy();
     $('.modal-trigger').leanModal();
     (function ($) {
 
@@ -64,4 +63,5 @@ $(document).ready(function () {
         };
     }( jQuery ));
     $('.parallax').parallax(1.5);
+    $('.scrollspy').scrollSpy();
 });
