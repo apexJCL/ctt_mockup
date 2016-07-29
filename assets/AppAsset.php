@@ -26,7 +26,8 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/materialize.css',
         'css/site.css',
-        'css/effects.css'
+        'css/effects.css',
+        'css/cust-styles.css'
     ];
     public $js = [
         'js/main.js'

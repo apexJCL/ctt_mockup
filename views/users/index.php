@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -17,10 +18,23 @@ $this->params['breadcrumbs'][] = $this->title;
     <!-- Sección en blanco para poder ver fondo -->
     <div class="section" style="min-height: 250px"></div>
     <div class="section white" id="main">
-        <?=
-        Html::a('<i class="material-icons">add</i>', ['create'], [
-            'class' => 'btn btn-floating btn-large waves-effect waves-light blue accent-2 main-fab'
-        ]) ?>
+        <div class="fixed-action-btn horizontal main-fab">
+            <a class="btn-floating btn-large">
+                <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+                <li>
+                    <?=
+                    Html::a('<i class="material-icons">add</i>', ['create'], [
+                        'class' => 'btn-floating cyan tooltipped',
+                        'data-position' => "bottom",
+                        'data-delay' => '1000',
+                        'data-tooltip' => 'Añadir'
+                    ]) ?>
+
+                </li>
+            </ul>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col s12">
@@ -29,8 +43,17 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div>
             <div class="col s12">
+                <?php Pjax::begin(); ?>
                 <?= GridView::widget([
                     'dataProvider' => $dataProvider,
+                    'filterModel' => $searchModel,
+                    'rowOptions' => function ($model, $key, $index, $grid) {
+                        return [
+                            'class' => ""
+                        ];
+                    },
+                    'tableOptions' => ['class' => 'highlight'],
+                    'layout'=>"{pager}\n{summary}\n{items}",
                     'columns' => [
                         ['class' => 'yii\grid\SerialColumn'],
                         [
@@ -41,11 +64,13 @@ $this->params['breadcrumbs'][] = $this->title;
                             }
                         ],
                         'username',
+                        'correo_electronico',
                         'created_at',
                         'updated_at',
                         ['class' => 'yii\grid\ActionColumn'],
                     ],
                 ]); ?>
+                <?php Pjax::end(); ?>
             </div>
         </div>
     </div>

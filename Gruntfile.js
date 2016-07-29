@@ -7,7 +7,7 @@ module.exports = function (grunt) {
                         expand: true,
                         flatten: true,
                         src: ['vendor/bower/materialize/dist/fonts/roboto/*'],
-                        dest: 'web/fonts/'
+                        dest: 'web/fonts/roboto/'
                     }
                 ]
             }

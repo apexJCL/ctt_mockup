@@ -7767,48 +7767,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-/** Fonts **/
-.roboto-light {
-  font-family: "Roboto" !important; }
-
-.roboto-medium {
-  font-family: "Roboto Medium" !important; }
-
-.roboto-regular {
-  font-family: "Roboto Regular" !important; }
-
-.roboto-thin {
-  font-family: "Roboto Thin" !important; }
-
-.roboto-bold {
-  font-family: "Roboto Bold" !important; }
-
-/*
-
-Raleway Font Face
-
-*/
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype");
-  font-weight: 400; }
-@font-face {
-  font-family: "Raleway Bold";
-  src: url("../fonts/raleway/Raleway-Bold.ttf") format("truetype");
-  font-weight: 700; }
-@font-face {
-  font-family: "Raleway Light";
-  src: url("../fonts/raleway/Raleway-Light.ttf") format("truetype");
-  font-weight: 300; }
-.raleway {
-  font-family: 'Raleway', sans-serif; }
-
-.raleway-bold {
-  font-family: 'Raleway Bold', sans-serif; }
-
-.raleway-light {
-  font-family: 'Raleway Light', sans-serif; }
-
 .container-small {
   width: 50% !important; }
   @media only screen and (max-width: 600px) {
@@ -7823,41 +7781,5 @@ Raleway Font Face
 
 .section-big {
   min-height: 498px !important; }
-
-.home-logo {
-  margin-top: 200px; }
-  @media only screen and (max-width: 992px) {
-    .home-logo {
-      margin-top: 0px; } }
-
-.modal {
-  background-color: rgba(255, 255, 255, 0.8);
-  margin-top: 15vh; }
-
-.margin-big {
-  margin: 200px 0; }
-  @media only screen and (max-width: 992px) {
-    .margin-big {
-      margin: 0; } }
-
-.title-margin {
-  margin-top: 300px; }
-  @media only screen and (max-width: 992px) {
-    .title-margin {
-      margin: 0; } }
-
-/*
-FAB Button Style
-*/
-.main-fab {
-  bottom: 45px;
-  left: 90vw; }
-  @media only screen and (max-width: 600px) {
-    .main-fab {
-      position: absolute;
-      top: auto;
-      left: auto;
-      bottom: 45px;
-      right: 40px; } }
 
 /*# sourceMappingURL=materialize.css.map */

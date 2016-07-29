@@ -1,0 +1,100 @@
+//Fonts
+
+/** Fonts **/
+
+.roboto-light {
+  font-family: "Roboto" !important;
+}
+
+.roboto-medium {
+  font-family: "Roboto Medium" !important;
+}
+
+.roboto-regular {
+  font-family: "Roboto Regular" !important;
+}
+
+.roboto-thin {
+  font-family: "Roboto Thin" !important;
+}
+
+.roboto-bold {
+  font-family: "Roboto Bold" !important;
+}
+
+/*
+
+Raleway Font Face
+
+*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../fonts/raleway/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Raleway Light";
+  src: url("../fonts/raleway/Raleway-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.raleway-bold {
+  font-family: 'Raleway Bold', sans-serif;
+}
+
+.raleway-light {
+  font-family: 'Raleway Light', sans-serif;
+}
+
+.home-logo {
+  margin-top: 200px;
+  @media only screen and (max-width: 992px) {
+    margin-top: 0px;
+  }
+}
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.80);
+  margin-top: 15vh;
+}
+
+.margin-big {
+  margin: 200px 0;
+  @media only screen and (max-width: 992px) {
+    margin: 0;
+  }
+}
+
+.title-margin {
+  margin-top: 300px;
+  @media only screen and (max-width: 992px) {
+    margin: 0;
+  }
+}
+
+/*
+FAB Button Style
+*/
+
+.main-fab {
+  position: absolute;
+  top: 315px;
+  @media only screen and (max-width:  600px) {
+    position: fixed;
+    top: auto;
+    bottom: 45px;
+  }
+}

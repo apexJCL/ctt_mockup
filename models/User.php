@@ -56,8 +56,8 @@ class User extends \yii\db\ActiveRecord
             'apellido_materno' => 'Apellido Materno',
             'correo_electronico' => 'Correo Electronico',
             'username' => 'Username',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'created_at' => 'Creado',
+            'updated_at' => 'Modificado',
         ];
     }
 

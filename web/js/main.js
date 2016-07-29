@@ -64,4 +64,8 @@ $(document).ready(function () {
     }( jQuery ));
     $('.parallax').parallax(1.5);
     $('.scrollspy').scrollSpy();
+    Materialize.updateTextFields();
+    try{
+        document.getElementById('main').scrollIntoView({block: "end", behavior: "smooth"});
+    } catch (err){}
 });
