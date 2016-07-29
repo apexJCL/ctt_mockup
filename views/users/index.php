@@ -18,7 +18,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <!-- Sección en blanco para poder ver fondo -->
     <div class="section" style="min-height: 250px"></div>
     <div class="section white" id="main">
-        <?php Pjax::begin(); ?>
         <div class="fixed-action-btn horizontal main-fab">
             <a class="btn-floating btn-large">
                 <i class="large material-icons">menu</i>
@@ -36,7 +35,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 </li>
             </ul>
         </div>
-        <?php Pjax::end(); ?>
         <div class="container">
             <div class="row">
                 <div class="col s12">
