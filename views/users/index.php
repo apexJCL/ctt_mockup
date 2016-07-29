@@ -60,7 +60,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'header' => Html::a('Nombre', Url::to(['users/index?sort=nombre'])),
                             'format' => 'raw',
                             'value' => function ($data) {
-                                return Html::a($data->nombre, Url::to(['users/view', 'id' => $data->id]));
+                                return Html::a($data->nombre, Url::to(['users/view', 'id' => $data->id]),['data-pjax' => '0']);
                             }
                         ],
                         'username',

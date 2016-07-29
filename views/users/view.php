@@ -3,7 +3,6 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\DetailView;
-use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\User */
@@ -40,13 +39,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     ?>
                 </li>
                 <li>
-                    <?= Html::a(Html::tag('i', 'undo', ['class' => 'material-icons']),
+                    <?= Html::a(Html::tag('i', 'list', ['class' => 'material-icons']),
                         Url::to(['users/index']),
                         [
                             'class' => 'btn-floating blue accent-1 tooltipped',
                             'data-position' => "bottom",
                             'data-delay' => '1000',
-                            'data-tooltip' => 'Volver'
+                            'data-tooltip' => 'Lista de Usuarios'
                         ]
                     ) ?>
                 </li>
@@ -71,12 +70,12 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <!-- Modal -->
-    <div class="modal white" id="delete">
+    <div class="modal red accent-4 white-text" id="delete">
         <div class="modal-content">
             <h4>¿Seguro que desea eliminar a este cliente?</h4>
             <p>Esta acción no se puede revertir</p>
         </div>
-        <div class="modal-footer blue accent-1">
+        <div class="modal-footer">
             <?= Html::a("Eliminar", ['delete', 'id' => $model->id],
                 ['class' => 'btn waves-effect waves-light red accent-2',
                     'data' => [
