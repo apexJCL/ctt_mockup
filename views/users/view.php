@@ -19,6 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <!-- Sección en blanco para poder ver fondo -->
     <div class="section" style="min-height: 250px"></div>
     <div class="section white">
+        <? Pjax::begin(); ?>
         <div class="fixed-action-btn horizontal main-fab">
             <a class="btn-floating btn-large">
                 <i class="large material-icons">menu</i>
@@ -52,7 +53,6 @@ $this->params['breadcrumbs'][] = $this->title;
             </ul>
         </div>
         <div class="container">
-            <? Pjax::begin(); ?>
             <h1><?= Html::encode($this->title) ?></h1>
             <?= DetailView::widget([
                 'model' => $model,
