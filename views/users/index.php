@@ -36,6 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </li>
             </ul>
         </div>
+        <?php Pjax::end(); ?>
         <div class="container">
             <div class="row">
                 <div class="col s12">
@@ -44,6 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div>
             <div class="col s12">
+                <?php Pjax::begin(); ?>
                 <?= GridView::widget([
                     'dataProvider' => $dataProvider,
                     'filterModel' => $searchModel,
@@ -53,7 +55,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ];
                     },
                     'tableOptions' => ['class' => 'highlight'],
-                    'layout'=>"{pager}\n{summary}\n{items}",
+                    'layout' => "{pager}\n{summary}\n{items}",
                     'columns' => [
                         ['class' => 'yii\grid\SerialColumn'],
                         [

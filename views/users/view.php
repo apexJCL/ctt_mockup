@@ -26,7 +26,8 @@ $this->params['breadcrumbs'][] = $this->title;
             </a>
             <ul>
                 <li>
-                    <a href="#delete" class="btn-floating red modal-trigger tooltipped" data-position="bottom" data-delay="1000" data-tooltip="Eliminar"><i class="material-icons">delete</i></a>
+                    <a href="#delete" class="btn-floating red modal-trigger tooltipped" data-position="bottom"
+                       data-delay="1000" data-tooltip="Eliminar"><i class="material-icons">delete</i></a>
                 </li>
                 <li>
                     <?= Html::a(Html::tag('i', 'edit', ['class' => 'material-icons']),
@@ -52,7 +53,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 </li>
             </ul>
         </div>
+        <? Pjax::end(); ?>
         <div class="container">
+            <? Pjax::begin(); ?>
             <h1><?= Html::encode($this->title) ?></h1>
             <?= DetailView::widget([
                 'model' => $model,
