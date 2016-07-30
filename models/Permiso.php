@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
+use yii\db\Expression;
 
 /**
  * This is the model class for table "permisos".
@@ -47,8 +49,8 @@ class Permiso extends \yii\db\ActiveRecord
             'id' => 'ID',
             'permiso' => 'Permiso',
             'descripcion' => 'Descripcion',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'created_at' => 'Creado',
+            'updated_at' => 'Modificado',
         ];
     }
 
@@ -58,5 +60,24 @@ class Permiso extends \yii\db\ActiveRecord
     public function getRolPermisos()
     {
         return $this->hasMany(RolPermisos::className(), ['permiso_id' => 'id']);
+    }
+
+    /**
+     * Define acciones por defecto
+     *
+     * @return array
+     */
+    public function behaviors()
+    {
+        return [
+            'timestamp' => [
+                'class' => 'yii\behaviors\TimestampBehavior',
+                'attributes' => [
+                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_at', 'updated_at'],
+                    ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
+                ],
+                'value' => new Expression('NOW()'),
+            ],
+        ];
     }
 }

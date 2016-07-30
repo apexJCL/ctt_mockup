@@ -46,7 +46,7 @@ $config = [
             'rules' => [
                 'login' => 'site/login',
                 'logout' => 'site/logout',
-                'home' => 'site/index'
+                'home' => 'site/index',
             ],
         ],
     ],

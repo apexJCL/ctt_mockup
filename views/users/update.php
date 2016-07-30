@@ -4,6 +4,7 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\User */
+/* @var $roles app\models\Rol */
 
 $this->title = 'Modificar cliente: ' . sprintf('%s', $model->correo_electronico);
 $this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
@@ -23,6 +24,7 @@ $this->params['breadcrumbs'][] = 'Update';
                 <div class="col s12">
                     <?= $this->render('_form', [
                         'model' => $model,
+                        'roles' => $roles
                     ]) ?>
                 </div>
             </div>

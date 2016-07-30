@@ -14,3 +14,12 @@ Algunos documentos engloban ciertos aspectos de la aplicación, tales como:
 + Elementos técnicos de la aplicación
 + Sugerencia e instrucciones para los frameworks incorporados en la misma
     
+# Elementos del proyecto
+
+Este proyecto está realizado con las siguientes herramientas:
+
++ Yii2 PHP Framework
++ Composer
++ Node.js
++ Sass
++ MaterializeCSS

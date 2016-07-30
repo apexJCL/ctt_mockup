@@ -5,6 +5,7 @@ namespace app\models;
 use Yii;
 use yii\db\ActiveRecord;
 use yii\db\Expression;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "users".
@@ -81,5 +82,26 @@ class User extends \yii\db\ActiveRecord
                 'value' => new Expression('NOW()'),
             ],
         ];
+    }
+
+    /**
+     * Regresa los ID's de los roles asignados a este usuario
+     *
+     */
+    public function getIDRoles(){
+        $r = ArrayHelper::toArray(UsuarioRoles::find()->select('rol_id')->where(['usuario_id' => $this->id])->all());
+        $roles = [];
+        foreach ($r as $rol)
+            array_push($roles, $rol['rol_id']);
+        return $roles;
+    }
+
+    public function updateRoles($roles){
+        foreach ($roles as $rid){
+            $ur = new UsuarioRoles();
+            $ur->usuario_id = $this->id;
+            $ur->rol_id = $rid;
+            $ur->save();
+        }
     }
 }

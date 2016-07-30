@@ -13,7 +13,6 @@ z-index: -100;
 -o-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
 background-size: cover;
-background-color: black;
 ">
     <img src="<?= $background_src ?>" alt="">
 </div>

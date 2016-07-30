@@ -111,7 +111,7 @@ a.desc:after {
 
 @media screen and (max-device-width: 600px) {
     html {
-        background: url(../video/CDMX.png) #000 no-repeat center center fixed;
+
     }
     .background-video {
         display: none;

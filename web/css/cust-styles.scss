@@ -91,7 +91,8 @@ FAB Button Style
 
 .main-fab {
   position: absolute;
-  top: 315px;
+  top: 318px;
+  max-height: 48px;
   @media only screen and (max-width:  600px) {
     position: fixed;
     top: auto;

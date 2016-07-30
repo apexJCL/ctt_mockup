@@ -5,6 +5,7 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\User */
+/* @var $roles app\models\Rol */
 
 $this->title = 'Agregar Usuario';
 $this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
@@ -23,6 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="col s12">
                     <?= $this->render('_form', [
                         'model' => $model,
+                        'roles' => $roles
                     ]) ?>
                 </div>
             </div>

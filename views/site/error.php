@@ -9,19 +9,26 @@ use yii\helpers\Html;
 
 $this->title = $name;
 ?>
-<div class="site-error">
+<?= $this->render('@app/views/layouts/_static_background', ['background_src' => '/img/lost.png']) ?>
 
-    <h1><?= Html::encode($this->title) ?></h1>
+<div>
+    <!-- Sección en blanco para poder ver fondo -->
+    <div class="section" style="min-height: 350px"></div>
+    <div class="section red lighten-4">
+        <div class="container">
 
-    <div class="alert alert-danger">
-        <?= nl2br(Html::encode($message)) ?>
+            <h1 class="raleway-bold"><?= Html::encode($this->title) ?></h1>
+
+            <div class="alert alert-danger">
+                <?= nl2br(Html::encode($message)) ?>
+            </div>
+
+            <p>
+                Hubo un error, no pudimos encontrar lo que nos solicitó.
+            </p>
+            <p class="raleway-bold">
+                Si cree que esto no debería estar pasando, contacte a Soporte Técnico.
+            </p>
+        </div>
     </div>
-
-    <p>
-        The above error occurred while the Web server was processing your request.
-    </p>
-    <p>
-        Please contact us if you think this is a server error. Thank you.
-    </p>
-
 </div>
