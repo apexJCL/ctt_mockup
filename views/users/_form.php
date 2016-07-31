@@ -32,6 +32,30 @@ use yii\widgets\Pjax;
         <div class="input-field col s12 m6">
             <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
         </div>
+        <div class="input-field col s12 m6">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>Imagen de Perfil</span>
+                    <?= $form->field($model, 'imageFile')->fileInput()->label('') ?>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-title">
+                        Imagen de perfil
+                    </div>
+                    <span class="right">
+                        <?= Html::img('/img/sections/users/main.png', ['class' => 'responsive-img', 'style' => 'max-width:48px']) ?>
+                    </span>
+                    <p>Si no se selecciona una imagen, se recurrirá a la imagen por defecto:</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col s12">

@@ -13,7 +13,7 @@
                 <?= $this->render('_links') ?>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <?= $this->render('_links') ?>
+                <?= $this->render('_links_mobile') ?>
             </ul>
         </div>
     </nav>

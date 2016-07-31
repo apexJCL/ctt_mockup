@@ -10,6 +10,7 @@ use app\models\UserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * UsersController implements the CRUD actions for User model.
@@ -68,8 +69,16 @@ class UsersController extends Controller
         $model = new User();
         $roles = Rol::find()->all();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            // Guarda la imagen
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            // Si la imagen es correctamente guardada y el modelo también
+            if($model->save() && $model->upload()) {
+                // Checamos si hay roles que actualizar
+                isset($_POST['roles']) ? $model->updateRoles($_POST['roles']) : $model->revokeRoles();
+                // Redirigir a pantalla
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -90,7 +99,7 @@ class UsersController extends Controller
         $roles = Rol::find()->all();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->updateRoles($_POST['roles']);
+            isset($_POST['roles']) ? $model->updateRoles($_POST['roles']) : $model->revokeRoles();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

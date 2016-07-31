@@ -3,7 +3,6 @@ $(document).ready(function () {
     $(".button-collapse").sideNav();
     $('.modal-trigger').leanModal();
     (function ($) {
-
         $.fn.parallax = function (speed) {
             var speed = speed || 1;
             var window_width = $(window).width();
@@ -23,7 +22,6 @@ $(document).ready(function () {
                     var $img = $this.children("img").first();
                     var img_height = $img.height();
                     var parallax_dist = (img_height - container_height) * speed;
-                    console.debug(speed);
                     var bottom = $this.offset().top + container_height;
                     var top = $this.offset().top;
                     var scrollTop = $(window).scrollTop();
@@ -65,6 +63,7 @@ $(document).ready(function () {
     $('.parallax').parallax(1.5);
     $('.scrollspy').scrollSpy();
     $('select').material_select();
+    $(".dropdown-button").dropdown();
     Materialize.updateTextFields();
     try{
         document.getElementById('main').scrollIntoView({block: "end", behavior: "smooth"});

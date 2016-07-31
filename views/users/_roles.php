@@ -12,11 +12,9 @@ use yii\helpers\Html;
             <?php
             foreach ($roles as $role) {
                 echo Html::tag('option', $role->rol,
-                    $model->isNewRecord ?
-                        ['value' => $role->id] :
-                        in_array($role->id, $model->getIDRoles()) ?
+                    ($model->isNewRecord) ? ['value' => $role->id] : (in_array($role->id, $model->getIDRoles()) ?
                             ['value' => $role->id, 'selected' => ''] :
-                            ['value' => $role->id]);
+                            ['value' => $role->id]));
             }
             ?>
         </select>

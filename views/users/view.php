@@ -13,13 +13,13 @@ $this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<?= $this->render('@app/views/layouts/_static_background', ['background_src' => '/img/sections/users/main.png']) ?>
+<?= $this->render('@app/views/layouts/_static_background', ['background_src' => $model->getAvatar()]) ?>
 
 <div class="div">
     <!-- Sección en blanco para poder ver fondo -->
-    <div class="section" style="min-height: 250px"></div>
-    <div class="section white">
-        <div class="fixed-action-btn horizontal main-fab">
+    <div class="section" style="min-height: 350px"></div>
+    <div class="section grey lighten-4">
+        <div class="fixed-action-btn horizontal main-fab" style="top: 420px;">
             <a class="btn-floating btn-large">
                 <i class="large material-icons">menu</i>
             </a>

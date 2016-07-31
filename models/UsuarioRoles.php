@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
+use yii\db\Expression;
 
 /**
  * This is the model class for table "usuario_roles".
@@ -34,7 +36,6 @@ class UsuarioRoles extends \yii\db\ActiveRecord
         return [
             [['usuario_id', 'rol_id'], 'required'],
             [['usuario_id', 'rol_id'], 'integer'],
-            [['usuario_id', 'rol_id'], 'unique'],
             [['created_at', 'updated_at'], 'safe'],
             [['rol_id'], 'exist', 'skipOnError' => true, 'targetClass' => Rol::className(), 'targetAttribute' => ['rol_id' => 'id']],
             [['usuario_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['usuario_id' => 'id']],
@@ -69,5 +70,19 @@ class UsuarioRoles extends \yii\db\ActiveRecord
     public function getUsuario()
     {
         return $this->hasOne(User::className(), ['id' => 'usuario_id']);
+    }
+
+    public function behaviors()
+    {
+        return [
+            'timestamp' => [
+                'class' => 'yii\behaviors\TimestampBehavior',
+                'attributes' => [
+                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_at', 'updated_at'],
+                    ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
+                ],
+                'value' => new Expression('NOW()'),
+            ],
+        ];
     }
 }

@@ -9,6 +9,9 @@ $navbar-height-mobile: 10vh !default;
 $navbar-brand-font-size: 1.2rem !default;
 // Configuración de la ruta de las fuentes
 $roboto-font-path: '../fonts/roboto/';
+$dropdown-bg-color: rgba(10, 29, 42, 0.6);
+$dropdown-color: rgba(255, 255, 255, 1);
+$dropdown-hover-bg-color: color('blue', 'lighten-3')!default;
 @import "../../vendor/bower/materialize/sass/materialize";
 
 // Containers
