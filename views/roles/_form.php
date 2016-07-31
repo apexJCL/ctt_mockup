@@ -6,6 +6,7 @@ use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $model app\Models\Rol */
+/* @var $permisos app\Models\Permiso */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -18,6 +19,12 @@ use yii\widgets\ActiveForm;
     </div>
     <div class="input-field col s12 m6 l6">
         <?= $form->field($model, 'descripcion')->textInput(['maxlength' => true]) ?>
+    </div>
+    <div class="input-field col s12">
+        <?= $this->render('_permisos', [
+            'model' => $model,
+            'permisos' => $permisos
+        ]) ?>
     </div>
 </div>
 <div class="row">

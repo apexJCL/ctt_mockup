@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div>
     <!-- Sección en blanco para poder ver fondo -->
     <div class="section" style="min-height: 250px"></div>
-    <div class="section grey lighten-5">
+    <div class="section grey lighten-5 fab-container">
         <div class="fixed-action-btn horizontal main-fab">
             <a class="btn-floating btn-large">
                 <i class="large material-icons">menu</i>

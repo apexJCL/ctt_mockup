@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
+use yii\db\Expression;
 
 /**
  * This is the model class for table "rol_permisos".
@@ -13,8 +15,8 @@ use Yii;
  * @property string $created_at
  * @property string $updated_at
  *
- * @property Permisos $permiso
- * @property Roles $rol
+ * @property Permiso $permiso
+ * @property Rol $rol
  */
 class RolPermisos extends \yii\db\ActiveRecord
 {
@@ -35,8 +37,8 @@ class RolPermisos extends \yii\db\ActiveRecord
             [['rol_id', 'permiso_id'], 'required'],
             [['rol_id', 'permiso_id'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
-            [['permiso_id'], 'exist', 'skipOnError' => true, 'targetClass' => Permisos::className(), 'targetAttribute' => ['permiso_id' => 'id']],
-            [['rol_id'], 'exist', 'skipOnError' => true, 'targetClass' => Roles::className(), 'targetAttribute' => ['rol_id' => 'id']],
+            [['permiso_id'], 'exist', 'skipOnError' => true, 'targetClass' => Permiso::className(), 'targetAttribute' => ['permiso_id' => 'id']],
+            [['rol_id'], 'exist', 'skipOnError' => true, 'targetClass' => Rol::className(), 'targetAttribute' => ['rol_id' => 'id']],
         ];
     }
 
@@ -59,7 +61,7 @@ class RolPermisos extends \yii\db\ActiveRecord
      */
     public function getPermiso()
     {
-        return $this->hasOne(Permisos::className(), ['id' => 'permiso_id']);
+        return $this->hasOne(Permiso::className(), ['id' => 'permiso_id']);
     }
 
     /**
@@ -67,6 +69,25 @@ class RolPermisos extends \yii\db\ActiveRecord
      */
     public function getRol()
     {
-        return $this->hasOne(Roles::className(), ['id' => 'rol_id']);
+        return $this->hasOne(Rol::className(), ['id' => 'rol_id']);
+    }
+
+    /**
+     * Define acciones por defecto
+     *
+     * @return array
+     */
+    public function behaviors()
+    {
+        return [
+            'timestamp' => [
+                'class' => 'yii\behaviors\TimestampBehavior',
+                'attributes' => [
+                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_at', 'updated_at'],
+                    ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
+                ],
+                'value' => new Expression('NOW()'),
+            ],
+        ];
     }
 }

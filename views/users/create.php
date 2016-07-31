@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div>
     <!-- Sección en blanco para poder ver fondo -->
     <div class="section" style="min-height: 250px"></div>
-    <div class="section white">
+    <div class="section green lighten-5">
         <div class="container">
             <div class="row">
                 <div class="col s12">

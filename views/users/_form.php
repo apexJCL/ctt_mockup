@@ -50,7 +50,7 @@ use yii\widgets\Pjax;
                         Imagen de perfil
                     </div>
                     <span class="right">
-                        <?= Html::img('/img/sections/users/main.png', ['class' => 'responsive-img', 'style' => 'max-width:48px']) ?>
+                        <?= Html::img('/img/sad.png', ['class' => 'responsive-img', 'style' => 'max-width:48px']) ?>
                     </span>
                     <p>Si no se selecciona una imagen, se recurrirá a la imagen por defecto:</p>
                 </div>

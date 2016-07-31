@@ -10,10 +10,30 @@
             </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <?= $this->render('_links') ?>
+                <?= $this->render('_links',[
+                    'user' => [
+                        'id' => 'dd-usuario',
+                        'class' => 'dropdown-content-menu',
+                        'data' => [
+                            'data-hover = "true"',
+                            'data-beloworigin = "true"',
+                            'data-activates = "dd-usuario"'
+                        ]
+                    ]
+                ]) ?>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <?= $this->render('_links_mobile') ?>
+                <?= $this->render('_links',[
+                    'user' => [
+                        'id' => 'dd-m-usuario',
+                        'class' => '',
+                        'data' => [
+                            'data-hover = "true"',
+                            'data-beloworigin = "true"',
+                            'data-activates = "dd-m-usuario"'
+                        ]
+                    ]
+                ]) ?>
             </ul>
         </div>
     </nav>

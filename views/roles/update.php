@@ -4,6 +4,7 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $model app\Models\Rol */
+/* @var $permisos[] app\Models\Permiso */
 
 $this->title = 'Actualizando rol: ' . $model->rol;
 $this->params['breadcrumbs'][] = ['label' => 'Rols', 'url' => ['index']];
@@ -21,6 +22,7 @@ $this->params['breadcrumbs'][] = 'Update';
             </h1>
             <?= $this->render('_form', [
                 'model' => $model,
+                'permisos' => $permisos
             ]) ?>
         </div>
     </div>

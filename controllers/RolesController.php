@@ -2,9 +2,12 @@
 
 namespace app\controllers;
 
+use app\models\Permiso;
+use app\models\PermisoSearch;
 use Yii;
 use app\Models\Rol;
 use app\models\RolSearch;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -64,12 +67,14 @@ class RolesController extends Controller
     public function actionCreate()
     {
         $model = new Rol();
+        $permisos = Permiso::find()->all();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
+                'permisos' => $permisos
             ]);
         }
     }
@@ -82,13 +87,17 @@ class RolesController extends Controller
      */
     public function actionUpdate($id)
     {
+
         $model = $this->findModel($id);
+        $permisos = Permiso::find()->all();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->updatePermisos();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
+                'permisos' => $permisos
             ]);
         }
     }
