@@ -15,6 +15,9 @@ Thumbs.db
 # composer vendor dir
 /vendor
 
+# user data
+/web/img/users/profile/*
+
 # composer itself is not needed
 composer.phar
 

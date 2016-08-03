@@ -25,7 +25,7 @@ use yii\web\UploadedFile;
 class User extends \yii\db\ActiveRecord
 {
 
-    public $avatarBasepath = 'img/users/';
+    public $avatarBasepath = 'img/users/profile/';
 
     /**
      * @var UploadedFile
@@ -132,7 +132,7 @@ class User extends \yii\db\ActiveRecord
     public function upload()
     {
         if ($this->validate()) {
-            $url = 'img/users/' . $this->username . '.' . $this->imageFile->extension;
+            $url = $this->avatarBasepath. $this->username . '.' . $this->imageFile->extension;
             $this->imageFile->saveAs($url);
             return true;
         } else {

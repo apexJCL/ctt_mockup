@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?= $this->render('@app/views/layouts/_static_background', [
     'background_src' => $model->getAvatar(),
-    'div_classes'  => 'black z-depth-1'
+    'div_classes'  => ''
 ]) ?>
 
 <div class="div">
