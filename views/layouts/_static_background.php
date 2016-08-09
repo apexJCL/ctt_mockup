@@ -20,7 +20,7 @@ z-index: -100;
 -o-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
 ">
-    <div class="col s12 center <?= empty($div_classes) ? '' : $div_classes ?> profile-picture--container">
+    <div class="<?= empty($div_classes) ? '' : $div_classes ?> profile-picture--container">
         <div class="background">
             <img src="<?= $background_src ?>" alt="">
         </div>

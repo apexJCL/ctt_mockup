@@ -98,24 +98,34 @@ FAB Button Style
 
 .profile-picture--container .foreground img {
   position: absolute;
-  top: 50%;
+  max-width: 256px;
+  max-height: 256px;
+  top: 128px;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, 0%);
+  -webkit-clip-path: circle(96px at center);
+  clip-path: circle(96px at center); }
   @media only screen and (max-width: 768px) {
     .profile-picture--container .foreground img {
+      max-width: none;
+      max-height: 100%;
+      margin-top: auto;
       position: relative;
       top: auto;
       left: auto;
       transform: translate(0, 0);
-      min-width: 100%; } }
+      min-width: 100%;
+      -webkit-clip-path: none;
+      clip-path: none; } }
 .profile-picture--container .background {
+  background-color: black;
   position: absolute;
-  z-index: -1;
   min-width: 100%; }
   .profile-picture--container .background img {
+    opacity: 0.5;
     min-width: 100%;
-    filter: blur(5px);
-    -webkit-filter: blur(10px);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
     transform: translateY(-30%); }
     @media only screen and (max-width: 600px) {
       .profile-picture--container .background img {

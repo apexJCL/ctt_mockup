@@ -24,7 +24,7 @@ Esta tabla contiene los datos de los usuarios que tienen acceso a la aplicación
 | **nombre**            | VARCHAR(30)   | Nombre del usuario |
 | **apellido_paterno**  | VARCHAR(30)   | Apellido paterno del usuario |
 | **apellido_materno**  | VARCHAR(30)   | Apellido materno del usuario |
-| **correo_electronico**| VARCHAR(50)   | Dirección de correo del usuario |
+| **email**| VARCHAR(50)   | Dirección de correo del usuario |
 | **username**          | VARCHAR(30)   | Nombre de usuario, único, que lo identifica de manera corta en la aplicación |
 
 ###### Roles
